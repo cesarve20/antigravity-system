@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity - Acceso</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <h2 id="form-title">Bienvenido a Bordo</h2>
+            <p>Ingresa tus credenciales para iniciar el despegue.</p>
+
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="login-email">Correo Electrónico</label>
+                    <input type="email" id="login-email" placeholder="astronauta@ejemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="login-pass">Contraseña</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="login-pass" placeholder="••••••••" required>
+                        <button type="button" id="toggle-login-pass" class="toggle-btn"
+                            title="Mostrar contraseña">👁️</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Iniciar Sesión</button>
+
+                <div class="switch-link">
+                    <p>¿No tienes cuenta? <span id="to-register">Regístrate aquí</span></p>
+                </div>
+            </form>
+
+            <form id="register-form" class="hidden">
+                <div class="input-group">
+                    <label for="reg-name">Nombre de Piloto</label>
+                    <input type="text" id="reg-name" placeholder="Ej: Neil Armstrong" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-email">Correo Electrónico</label>
+                    <input type="email" id="reg-email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-pass">Contraseña</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="reg-pass" placeholder="Crea una clave segura" required>
+                        <button type="button" id="toggle-reg-pass" class="toggle-btn"
+                            title="Mostrar contraseña">👁️</button>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary full-width">Registrarse</button>
+
+                <div class="switch-link">
+                    <p>¿Ya tienes cuenta? <span id="to-login">Inicia Sesión</span></p>
+                </div>
+            </form>
+
+            <br>
+            <a href="../index.html" class="back-link">← Volver a la Tierra (Home)</a>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

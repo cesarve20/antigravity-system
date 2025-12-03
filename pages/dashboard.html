@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antigravity - Panel de Control</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">ANTIGRAVITY <span style="font-size: 0.5em; color: #58a6ff;">/ SYSTEM</span></div>
+        <nav>
+            <span id="user-display" style="margin-right: 20px;">Hola, Astronauta</span>
+            <button id="logout-btn" class="btn-primary" style="background-color: #ff5858; color: white;">Cerrar
+                Sesión</button>
+        </nav>
+    </header>
+
+    <main class="hero" style="min-height: 60vh;">
+        <div class="content">
+            <h1>Acceso Concedido</h1>
+            <p>Bienvenido al sistema central. Los sistemas de gravedad están estables.</p>
+        </div>
+
+        <section class="features">
+            <div class="card">
+                <h3 style="color: #58a6ff;">Oxígeno</h3>
+                <p id="stat-oxygen" style="font-size: 2rem; font-weight: bold;">98.0%</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #bc8cff;">Gravedad</h3>
+                <p id="stat-gravity" style="font-size: 2rem; font-weight: bold;">0.00 G</p>
+            </div>
+            <div class="card">
+                <h3 style="color: #79c0ff;">Velocidad</h3>
+                <p id="stat-speed" style="font-size: 2rem; font-weight: bold;">28,000 km/h</p>
+            </div>
+        </section>
+
+        <section class="mission-control">
+            <h2>📋 Bitácora de Misión</h2>
+
+            <div class="mission-input-group">
+                <input type="text" id="mission-text" placeholder="Nueva orden para la tripulación..." />
+                <button id="add-mission-btn" class="btn-primary">Agregar</button>
+            </div>
+
+            <ul id="mission-list" class="mission-list">
+            </ul>
+        </section>
+    </main>
+
+    <script src="../js/dashboard.js"></script>
+
+</body>
+
+</html>
